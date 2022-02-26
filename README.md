@@ -4,7 +4,7 @@ Requirements:
 1. Retrieve the top 100 coins from Coingecko API.
 2. Implements state management
 3. State data must be localStorage persistent as the user refreshes browser. Please use the chrome dev tools to delete localStorage data if you need the entire original list again.
-4. Sort list basd on market cap ranking 
+4. Sort list based on market cap ranking 
 
 
 Direct link: https://621986b483b7b20e39e5d909--gracious-nobel-68ccdf.netlify.app/
