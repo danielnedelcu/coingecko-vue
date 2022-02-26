@@ -1,5 +1,7 @@
 # coin-challenge
 
+Direct link: https://621986b483b7b20e39e5d909--gracious-nobel-68ccdf.netlify.app/
+
 ## Project setup
 ```
 yarn install
