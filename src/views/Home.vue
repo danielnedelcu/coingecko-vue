@@ -90,6 +90,7 @@ export default {
 </script>
 
 <style scoped>
+
     .flex {
       display: flex;
       align-items: baseline;
