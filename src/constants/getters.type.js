@@ -1,0 +1,1 @@
+export const GETTER_COIN_LIST= "getCoinList";

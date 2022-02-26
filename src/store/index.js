@@ -1,14 +1,10 @@
-import { createStore } from 'vuex'
+import { createStore } from "vuex";
+import coinStore from "./coinStore";
+import createPersistedState from "vuex-persistedstate";
 
 export default createStore({
-  state: {
-  },
-  getters: {
-  },
-  mutations: {
-  },
-  actions: {
-  },
   modules: {
-  }
-})
+    coinStore
+  },
+  plugins: [createPersistedState()]
+});
