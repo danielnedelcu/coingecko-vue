@@ -3,7 +3,7 @@
 Requirements:
 1. Retrieve the top 100 coins from Coingecko API.
 2. Implements state management
-3. State data must be localStorage persistent as the user refreshes browser. Please use the chrome dev tools to delete localStorage data if you need the entire original list again.
+3. State data must be localStorage persistent as the user refreshes browser. Please use the chrome dev tools to delete localStorage data if you need the entire original list again. (Will implememnt localStorage clear with a button next)
 4. Sort list based on market cap ranking 
 
 
