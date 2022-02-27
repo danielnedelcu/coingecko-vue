@@ -1,6 +1,16 @@
 # coin-challenge
 
 ## Basic
+A:
+```
+const randomArray = (length, max) => [...new Array(length)]
+    .map(() => Math.round(Math.random() * max));
+    
+const numbers = [...new Set(randomArray(20, 40))];
+numbers.sort((a, b) => a - b);
+```
+
+B:
 ```
 const loadInitialState = async (state) => {
   const user = await getUser(state, 'email@email.com');
