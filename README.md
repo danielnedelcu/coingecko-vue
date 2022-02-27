@@ -1,5 +1,21 @@
 # coin-challenge
 
+## Basic
+```
+const loadInitialState = async (state) => {
+  const user = await getUser(state, 'email@email.com');
+  const settings = await getUserSettings(state, user.id);
+  const role = await setRole(state, user.id, "ADMIN");
+  const notify = await notifyUser(state, "USER_ROLE_UPDATED");
+
+  return notifyAdmins("USER_ROLE_UPDATED");
+}
+
+loadInitialState()
+  .then(doSomething)
+```
+
+## Practical
 Requirements:
 1. Retrieve the top 100 coins from Coingecko API.
 2. Implements state management
