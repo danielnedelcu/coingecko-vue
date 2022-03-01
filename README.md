@@ -10,6 +10,32 @@ const numbers = [...new Set(randomArray(20, 40))];
 numbers.sort((a, b) => a - b);
 ```
 
+### Time estimate
+```
+let performance = window.performance;
+const times = 1000;     
+
+let sortNumbers = async (numArr) => {
+	let r = await numArr.sort((a, b) => a - b);
+	return r;
+};
+
+// Start timer
+const t0 = performance.now();
+
+for(var i = 0; i < times; i++){
+    sortNumbers(numbers);
+}
+
+//End Timer
+const t1 = performance.now();
+const duration = t1 - t0;
+// To calculate to 10b, you multiply the milliseconds total by 10million.
+// At 240ms per 1000 function calls X 10million = 40 minutes aprox.
+```
+
+
+
 B:
 ```
 const loadInitialState = async (state) => {
