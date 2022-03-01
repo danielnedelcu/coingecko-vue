@@ -55,8 +55,17 @@ loadInitialState()
 Requirements:
 1. Retrieve the top 100 coins from Coingecko API.
 2. Implements state management
-3. State data must be localStorage persistent as the user refreshes browser. Please use the chrome dev tools to delete localStorage data if you need the entire original list again. (Will implement localStorage clear with a button next)
+3. State data must be localStorage persistent as the user refreshes browser. Please use the chrome dev tools to delete localStorage data if you need the entire original list again.
 4. Sort list based on market cap ranking 
+
+## Description
+What i built was a simple Vue app, that:
+1. Initially retrieves the first 100 coins based on their `market_cap_rank` in ascending order.
+2. With the result in an array, I then create a visual list of all the coins, including their image, name and symbol.
+3. The search input field allows users to search for any coin, retrieve all the coins associated with it and populate the UI.
+4. The users also have the ability to sort any list on the UI either in descending or ascending order using the select/dropdown field.
+5. State is managed by Vuex and the only property in state is `coins`.
+6. The storage of the state is offloaded to `localStorage` so as to preserve the state of the application on browser refresh.
 
 
 Direct link: https://621986b483b7b20e39e5d909--gracious-nobel-68ccdf.netlify.app/
